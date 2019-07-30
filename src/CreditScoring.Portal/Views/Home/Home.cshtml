@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewData["Title"] = "Credit Score Info";
+    var scoreBands = new List<UserScoreBandModel>();
+    if (ViewBag.UserScoreBands != null)
+    {
+        scoreBands = (List<UserScoreBandModel>)ViewBag.UserScoreBands;
+    }
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Credit Score Info</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/header.css" />
+        <link rel="stylesheet" href="~/css/home.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/css/home.min.css" />
+    </environment>
+
+</head>
+
+<body>
+    @section header_title
+        {
+        <h3>Credit Score Info</h3>
+    }
+    <div class="col-sm-3">
+        <input type="text" id="cnic" name="cnic" placeholder="CNIC" />
+        <input type="text" id="msdn" name="msdn" placeholder="Mobile Number" />
+        <select class="form-control" id="exampleFormControlSelect1">
+            @foreach (var score in scoreBands)
+            {
+                <option value="@score.ScoreId">@score.Score</option>
+            }
+        </select>
+    </div>
+    <div id="pdf-content" class="content">
+        <h4>Customer Risk Profile</h4>
+        <div class="input-w" >
+
+            <label>MSISDN:  Test</label>
+        </div>
+       
+        <div class="input-w">
+            <label>CNIC: Test</label>
+            
+        </div>
+       
+        <div class="input-w">
+            <label>Lending Amount: Test</label>
+           
+        </div>
+       
+        <div class="input-w">
+            <label>Customer Risk Profile Indicator: Test</label>
+
+        </div>
+       
+        <div class="input-w">
+            <label>Customer Index Value: Test</label>
+           
+        </div>
+        
+        <div class="input-w">
+            <label>Score Valid: Test</label>
+           
+        </div>
+        
+        <label id="disclaimer" >Disclaimer: </label>
+        <div id="editor"></div>
+    </div>
+    <button class="btn btn-primary" style="margin-left:25px;" id="cmd">Generate PDF</button>
+    <environment include="Development">
+        <script src="~/js/plugins/jquery-3.4.1.min.js"></script>
+        <script src="~/js/plugins/popper.min.js"></script>
+        <script src="~/js/plugins/bootstrap.min.js"></script>
+        <script src="~/js/plugins/jspdf.min.js"></script>
+        <script src="~/js/plugins/rasterizeHTML.allinone.js"></script>
+
+        <script src="~/js/home.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/js/home.min.js"></script>
+    </environment>
+</body>
+</html>
+
+

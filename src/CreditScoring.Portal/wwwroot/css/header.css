@@ -1,0 +1,24 @@
+﻿body {
+}
+h3 {
+    color: #fff;
+}
+.header {
+    height: 60px;
+    width: 100%;
+    background: #2590D6;
+    display: flex;
+    align-items: center;
+}
+#logout-link
+{
+    color:#fff;
+    margin-right:50px;
+}
+.header-logout {
+    position: absolute;
+    right: 0;
+}
+.header-title {
+    margin: 0 auto;
+}

@@ -1,0 +1,81 @@
+﻿[
+  {
+    "outputFileName": "wwwroot/css/admin_login.min.css",
+    "inputFiles": [
+      "wwwroot/css/bootstrap.min.css",
+      "wwwroot/css/admin_login.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/create_user.min.css",
+    "inputFiles": [
+      "wwwroot/css/bootstrap.min.css",
+      "wwwroot/css/font-awesome.min.css",
+      "wwwroot/css/bootstrap-multiselect.css",
+      "wwwroot/css/header.css",
+      "wwwroot/css/create_user.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/user_list.min.css",
+    "inputFiles": [
+      "wwwroot/css/bootstrap.min.css",
+      "wwwroot/css/font-awesome.min.css",
+      "wwwroot/css/bootstrap-multiselect.css",
+      "wwwroot/css/header.css.css",
+      "wwwroot/css/user_list.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/home.min.css",
+    "inputFiles": [
+      "wwwroot/css/bootstrap.min.css",
+      "wwwroot/css/header.css.css",
+      "wwwroot/css/home.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/create_user.min.js",
+    "inputFiles": [
+      "wwwroot/js/plugins/jquery-3.4.1.min.js",
+      "wwwroot/js/plugins/popper.min.js",
+      "wwwroot/js/plugins/bootstrap.min.js",
+      "wwwroot/js/plugins/bootstrap-multiselect.min.js",
+      "wwwroot/js/create_user.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/user_list.min.js",
+    "inputFiles": [
+      "wwwroot/js/plugins/jquery-3.4.1.min.js",
+      "wwwroot/js/plugins/popper.min.js",
+      "wwwroot/js/plugins/bootstrap.min.js",
+      "wwwroot/js/plugins/bootstrap-multiselect.min.js",
+      "wwwroot/js/user_list.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/home.min.js",
+    "inputFiles": [
+      "wwwroot/js/plugins/jquery-3.4.1.min.js",
+      "wwwroot/js/plugins/popper.min.js",
+      "wwwroot/js/plugins/bootstrap.min.js",
+      "wwwroot/js/plugins/jspdf.min.js",
+      "wwwroot/js/plugins/rasterizeHTML.allinone.js",
+      "wwwroot/js/home.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/admin_login.min.js",
+    "inputFiles": [
+      "wwwroot/js/plugins/jquery-3.4.1.min.js",
+      "wwwroot/js/plugins/bootstrap.min.js",
+      "wwwroot/js/admin_login.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]

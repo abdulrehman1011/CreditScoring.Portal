@@ -1,0 +1,84 @@
+﻿body {
+    background-color:#cccccc;
+}
+#formContent {
+    margin-top:30px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    border-width:2px;
+    /*-webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);*/
+    text-align: center;
+}
+
+input {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+    /*input[type=text]*/
+    input:focus {
+        background-color: #fff;
+        border-bottom: 2px solid #5fbae9;
+    }
+
+    input:placeholder {
+        color: #cccccc;
+    }
+#btn-create:disabled
+{
+    cursor:not-allowed;
+}
+*:focus {
+    outline: none !important;
+}
+.btn:focus {
+    outline: 0 !important;
+    box-shadow: none !important; 
+}
+*:active {
+    outline: none !important;
+}
+.btn-width {
+    width: 100px !important;
+}
+.error {
+    line-height: 2;
+    color: red;
+    font-size: 1em;
+    overflow-wrap: break-word;
+    padding: 0px 12px;
+    text-align: left;
+}
+.dropdown-menu{
+    width:85% !important;
+}
+.dropdown-toggle::after
+{
+    content:none !important;
+}
+.multiselect-selected-text
+{
+    text-align:left !important;
+}
